@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五子棋游戏</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>五子棋</h1>
+        <div class="info">
+            <div class="player-info" id="black-info">
+                <span class="stone-preview black-stone"></span>
+                <span>黑棋</span>
+            </div>
+            <div class="player-info" id="white-info">
+                <span class="stone-preview white-stone"></span>
+                <span>白棋</span>
+            </div>
+        </div>
+        <div id="board"></div>
+        <div class="controls">
+            <button class="restart-btn" onclick="restartGame()">重新开始</button>
+            <button class="undo-btn" onclick="undoMove()">悔棋</button>
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+    <script src="src/game.js"></script>
+</body>
+</html>
